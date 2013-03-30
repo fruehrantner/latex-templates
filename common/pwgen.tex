@@ -1,0 +1,15 @@
+% lualatex -shell-escape
+\documentclass{article}
+\usepackage[a4paper,hmargin=2.2cm,vmargin=2.5cm]{geometry}
+\usepackage{bashful}
+\usepackage{fontspec}
+\setmainfont{Inconsolata}
+
+\lstdefinestyle{bashfulStdout}{
+}
+
+\begin{document}
+\bash[stdout]
+pwgen -C -s 10 399
+\END
+\end{document}
